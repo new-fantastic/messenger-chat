@@ -1,0 +1,26 @@
+{
+  "name": "vsf-messenger-chat",
+  "version": "1.0.0",
+  "description": "Facebook Messneger Customer Chat module for Vue Storefront",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/new-fantastic/vsf-messenger-chat.git"
+  },
+  "keywords": [
+    "Vue",
+    "Storefront",
+    "Messenger",
+    "Chat",
+    "Facebook"
+  ],
+  "author": "fifciu <filip@newfantastic.com>, allozaur <alek@newfantastic.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/new-fantastic/vsf-messenger-chat/issues"
+  },
+  "homepage": "https://github.com/new-fantastic/vsf-messenger-chat#readme"
+}
