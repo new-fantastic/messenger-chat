@@ -69,7 +69,8 @@ Go to `../vue-storefront/config/local.json` and add code below
 
 ```json
 "facebookJsSdk" : {
-   "appId" : "123456789012345"
+   "appId" : "<your_fb_app_id>",
+   "pageId": "<your_fb_page_id>"
 }
 ```
 
@@ -101,12 +102,6 @@ export default {
 
 <br/>
 
-### Global
-
-<br/>
-
-...
-
 <br/>
 
 ## Configuration
@@ -117,33 +112,19 @@ export default {
 
 <br/>
 
-You can customize the appearance of your Customer Chat by passing values through these properties:
+You can customize the appearance of your Customer Chat by passing values to component in template through these properties:
 
 <br/>
 
 | Property                  | Type      | Default                              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | ------------------------- |:---------:| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `theme_color`             | `String`  | `#0084FF`                            | ***Optional***. The color to use as a theme for the plugin, including the background color of the customer chat plugin icon and the background color of any messages sent by users. Supports any hexadecimal color code with a leading number sign (e.g. `#0084FF`), **except white**.                                                                                                                                                                                                                                                                                  |
+| `theme_color`             | `String`  | `#0084FF`                            | ***Optional***. The color to use as a theme for the plugin, including the background color of the customer chat plugin icon and the background color of any messages sent by users. Supports any hexadecimal color code with a leading number sign (e.g. `#0084FF`). It has to be valid HEX Color**except white**.                                                                                                                                                                                                                                                                                  |
 | `logged_in_greeting`      | `String`  | `null`                               | ***Optional***. The greeting text that will be displayed if the user is currently logged in to Facebook. Maximum 80 characters.                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | `logged_out_greeting`     | `String`  | `null`                               | ***Optional***. The greeting text that will be displayed if the user is currently not logged in to Facebook. Maximum 80 characters.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | `greeting_dialog_display` | `String`  | `show` on desktop / `hide` on mobile | ***Optional***. Sets how the greeting dialog will be displayed. The following values are supported:<br/>- `show`: The greeting dialog is shown and remains open on desktop and mobile after the number of seconds set by the greeting_dialog_delay attribute.<br/>- `hide`: The greeting dialog is hidden until a user clicks on the plugin on desktop and mobile.<br/>- `fade`: The greeting dialog is shown briefly after the number of seconds set by the greeting_dialog_delay attribute, then fades away and is hidden on desktop. The dialog is hidden on mobile. |
 | `greeting_dialog_delay`   | `Boolean` | `false`                              | ***Optional***. Sets the number of seconds of delay before the greeting dialog is shown after the plugin is loaded. This can be used to customize when you want the greeting dialog to appear.                                                                                                                                                                                                                                                                                                                                                                          |
 
 <br/>
-
-### Placement
-
-<br/>
-
-You can also customize the placement of `MessengerChat`  component on the page.
-
-<br/>
-
-| **Property**    | **Type** | **Default** | **Description**                                                                 |
-| --------------- |:--------:|:-----------:| ------------------------------------------------------------------------------- |
-| `chatFixed`     | `String` | `true`      | ***Optional***                                                                  |
-| `chatPositionX` | `String` | `right`     | ***Optional***. The following values are supported:<br/>- `left` <br/>- `right` |
-| `chatPositionY` | `String` | `bottom`    | ***Optional***. The following values are supported:<br/>- `bottom` <br/>- `top` |
 
 ### Example
 
@@ -152,7 +133,7 @@ You can also customize the placement of `MessengerChat`  component on the page.
 ```javascript
 <template>
 ...
-  <messenger-chat :theme_color="#000000" :logged_in_greeting="$t('Hello! How can we help you?')"/>
+  <messenger-chat theme_color="#000000" :logged_in_greeting="$t('Hello! How can we help you?')"/>
 ...
 </template>
 
