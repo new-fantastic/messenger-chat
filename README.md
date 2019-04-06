@@ -68,7 +68,7 @@ Go to `../vue-storefront/config/local.json` and add code below
 <br/>
 
 ```json
-"facebookJsSdk" : {
+"facebookSdk" : {
    "appId" : "<your_fb_app_id>",
    "pageId": "<your_fb_page_id>"
 }
