@@ -8,7 +8,7 @@
 
 ### Important note!
 
-**Unless your Vue Storefront app is served via _https_ you won't be able to see Messenger Customer Chat widget in your app's UI.** If you can't run host app on VPS but you want to be able to see the Messenger widget on your locally hosted app, you can use a service like https://ngrok.com/ to have your locally hosted app available via URL.
+**Unless your Vue Storefront app is served via _https_ you won't be able to see Messenger Customer Chat widget in your app's UI.** If you can't host your app on VPS but you want to be able to see the Messenger widget on your locally hosted app, you can use a service like https://ngrok.com/ to have your locally hosted app available via URL.
 
 <br/>
 
