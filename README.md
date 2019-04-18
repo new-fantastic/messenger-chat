@@ -24,7 +24,18 @@
 
 <br/>
 
-### 1. Download the module
+### 1. Install Facebook JS SDK Module
+
+<br/>
+
+```bash
+cd ../vue-storefront/src/modules;
+git clone https://github.com/new-fantastic/vsf-facebook-js-sdk.git
+```
+
+<br/>
+
+### 2. Download the module
 
 <br/>
 
@@ -39,7 +50,7 @@ git clone https://github.com/new-fantastic/vsf-messenger-chat.git;
 
 <br/>
 
-### 2. Import and register the module
+### 3. Import and register the module
 
 <br/>
 
@@ -59,7 +70,7 @@ VsfMessengerChat
 
 <br/>
 
-### 3. Add new settings to your config
+### 4. Add new settings to your config
 
 <br/>
 
