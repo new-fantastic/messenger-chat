@@ -1,5 +1,7 @@
 # vsf-messenger-chat
 
+<br/>
+
 ⚡️ Facebook Messenger Customer Chat module for Vue Storefront ⚡️
 
 > Messenger Platform Customer Chat Plugin (beta) documentation: https://developers.facebook.com/docs/messenger-platform/discovery/customer-chat-plugin
