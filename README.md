@@ -32,7 +32,7 @@
 
 <br/>
 
-### 1. Download Facebook JS SDK and Messenger Customer Chat modules
+### 1. Download [Facebook JS SDK](https://github.com/new-fantastic/vsf-facebook-js-sdk) and Messenger Customer Chat modules
 
 <br/>
 
