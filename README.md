@@ -8,7 +8,7 @@
 
 ### Important note!
 
-**Unless your Vue Storefront app is served via _https_ you won't be able to see Messenger Customer Chat widget in your app's UI.** If you can't host your app on VPS but you want to be able to see the Messenger widget on your locally hosted app, you can use a service like https://ngrok.com/ to have your locally hosted app available via URL.
+**Unless your Vue Storefront app is served via _https_ you won't be able to see Messenger Customer Chat widget in your app's UI.** If you can't host your app on VPS but you want to be able to see the Messenger widget on your locally hosted app, you can use a service like https://ngrok.com/ to have your locally hosted app available via special URL.
 
 <br/>
 
@@ -30,33 +30,19 @@
 
 <br/>
 
-### 1. Install Facebook JS SDK Module
+### 1. Download Facebook JS SDK and Messenger Customer Chat modules
 
 <br/>
 
 ```bash
 cd ../vue-storefront/src/modules;
-git clone https://github.com/new-fantastic/vsf-facebook-js-sdk.git
-```
-
-<br/>
-
-### 2. Download the module
-
-<br/>
-
-Go to your `vue-storefront`'s `modules` catalog and clone repository with the module.
-
-<br/>
-
-```bash
-cd ../vue-storefront/src/modules;
+git clone https://github.com/new-fantastic/vsf-facebook-js-sdk.git;
 git clone https://github.com/new-fantastic/vsf-messenger-chat.git;
 ```
 
 <br/>
 
-### 3. Import and register the module
+### 2. Import and register the downloaded modules
 
 <br/>
 
@@ -65,10 +51,12 @@ Go to `../vue-storefront/src/modules/index.ts` and add code below
 <br/>
 
 ```javascript
+import { VsfFacebookJsSdk } from './vsf-facebook-js-sdk'
 import { VsfMessengerChat } from './vsf-messenger-chat'
 ...
 export const registerModules: VueStorefrontModule[] = [
 ...
+VsfFacebookJsSdk,
 VsfMessengerChat
 ...
 ]
@@ -76,7 +64,7 @@ VsfMessengerChat
 
 <br/>
 
-### 4. Add new settings to your config
+### 3. Add new settings to your config
 
 <br/>
 
@@ -85,7 +73,7 @@ Go to `../vue-storefront/config/local.json` and add code below
 <br/>
 
 ```json
-"facebookSdk" : {
+"facebookJsSdk" : {
    "appId" : "<your_fb_app_id>",
    "pageId": "<your_fb_page_id>"
 }
