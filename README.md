@@ -75,10 +75,17 @@ Go to `../vue-storefront/config/local.json` and add code below
 <br/>
 
 ```json
-"facebookJsSdk" : {
-   "appId" : "<your_fb_app_id>",
-   "pageId": "<your_fb_page_id>"
-}
+"facebookJsSdk": {
+  "appId" : "<your_fb_app_id>",
+  "pageId": "<your_fb_page_id>"
+},
+"facebookMessengerChat": {
+  "themeColor": "#0084FF",
+  "loggedInGreeting": "80",
+  "loggedOutGreeting": "80",
+  "greetingDialogDisplay": "hide",
+  "greetingDialogDelay": 5
+},
 ```
 
 <br/>
@@ -96,7 +103,7 @@ Include the `MessengerChat` component in your template directly:
 <br/>
 
 ```javascript
-import { MessengerChat } from 'src/modules/vsf-messenger-chat/components/MessengerChat';
+import MessengerChat from 'src/modules/vsf-messenger-chat/components/MessengerChat'
 
 export default {
   ...
