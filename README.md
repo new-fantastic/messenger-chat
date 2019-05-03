@@ -32,14 +32,14 @@
 
 <br/>
 
-### 1. Download [Facebook JS SDK](https://github.com/new-fantastic/vsf-facebook-js-sdk) and Messenger Customer Chat modules
+### 1. Download [Facebook JS SDK](https://github.com/new-fantastic/facebook-js-sdk) and Messenger Customer Chat modules
 
 <br/>
 
 ```bash
 cd ../vue-storefront/src/modules;
-git clone https://github.com/new-fantastic/vsf-facebook-js-sdk.git;
-git clone https://github.com/new-fantastic/vsf-messenger-chat.git;
+git clone https://github.com/new-fantastic/facebook-js-sdk.git;
+git clone https://github.com/new-fantastic/messenger-chat.git;
 ```
 
 <br/>
@@ -53,13 +53,13 @@ Go to `../vue-storefront/src/modules/index.ts` and add code below
 <br/>
 
 ```javascript
-import { VsfFacebookJsSdk } from './vsf-facebook-js-sdk'
-import { VsfMessengerChat } from './vsf-messenger-chat'
+import { FacebookJsSdk } from './facebook-js-sdk'
+import { MessengerChat } from './messenger-chat'
 ...
 export const registerModules: VueStorefrontModule[] = [
 ...
-VsfFacebookJsSdk,
-VsfMessengerChat
+FacebookJsSdk,
+MessengerChat
 ...
 ]
 ```
@@ -96,7 +96,7 @@ Include the `MessengerChat` component in your template directly:
 <br/>
 
 ```javascript
-import { MessengerChat } from 'src/modules/vsf-messenger-chat/components/MessengerChat';
+import { MessengerChat } from 'src/modules/messenger-chat/components/MessengerChat';
 
 export default {
   ...
@@ -146,7 +146,7 @@ You can customize the appearance of your Customer Chat by passing values to comp
 
 <script>
 ...
-import { MessengerChat } from 'src/modules/vsf-messenger-chat/components/MessengerChat';
+import { MessengerChat } from 'src/modules/messenger-chat/components/MessengerChat';
 ...
 export default {
  components: {
