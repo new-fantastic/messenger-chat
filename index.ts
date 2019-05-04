@@ -8,4 +8,4 @@ const moduleConfig: VueStorefrontModuleConfig = {
   beforeRegistration
 }
 
-export const VsfMessengerChat = new VueStorefrontModule(moduleConfig)
+export const MessengerChat = new VueStorefrontModule(moduleConfig)
