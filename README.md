@@ -1,4 +1,4 @@
-# messenger-chat
+# vsf-messenger-chat
 
 <br/>
 
