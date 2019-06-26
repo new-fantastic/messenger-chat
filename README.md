@@ -96,7 +96,7 @@ Include the `MessengerChat` component in your template directly:
 <br/>
 
 ```javascript
-import { MessengerChat } from 'src/modules/messenger-chat/components/MessengerChat';
+import MessengerChat from 'src/modules/vsf-messenger-chat/components/MessengerChat';
 
 export default {
   ...
