@@ -18,7 +18,7 @@
 
 <script>
 
-import rootStore from '@vue-storefront/store'
+import rootStore from '@vue-storefront/core/store'
 const pId = rootStore.state.config.facebookSdk.pageId
 
 export default {
